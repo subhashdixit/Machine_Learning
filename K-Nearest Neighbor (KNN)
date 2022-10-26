@@ -1,0 +1,32 @@
+K-Nearest Neighbor:
+-------------------
+Introduction:
+-------------
+K-nearest neighbors (KNN) is a type of supervised learning algorithm used for both regression and classification. KNN tries to predict the correct class for the test 
+data by calculating the distance between the test data and all the training points. Then select the K number of points which is closet to the test data. The KNN 
+algorithm calculates the probability of the test data belonging to the classes of ‘K’ training data and class holds the highest probability will be selected. In the 
+case of regression, the value is the mean of the ‘K’ selected training points.
+
+Suppose, we have an image of a creature that looks similar to cat and dog, but we want to know either it is a cat or dog. So for this identification, we can use the 
+KNN algorithm, as it works on a similarity measure. Our KNN model will find the similar features of the new data set to the cats and dogs images and based on the most
+similar features it will put it in either cat or dog category.
+
+Why do we need a K-NN Algorithm?
+Suppose there are two categories, i.e., Category A and Category B, and we have a new data point x1, so this data point will lie in which of these categories. To solve 
+this type of problem, we need a K-NN algorithm. With the help of K-NN, we can easily identify the category or class of a particular dataset.
+
+How does K-NN work?
+The K-NN working can be explained on the basis of the below algorithm:
+Step-1: Select the number K of the neighbors
+Step-2: Calculate the Euclidean distance of K number of neighbors
+Step-3: Take the K nearest neighbors as per the calculated Euclidean distance.
+Step-4: Among these k neighbors, count the number of the data points in each category.
+Step-5: Assign the new data points to that category for which the number of the neighbor is maximum.
+Step-6: Our model is ready.
+
+Suppose we have a new data point and we need to put it in the required category.
+1.Firstly, we will choose the number of neighbors, so we will choose the k=5.
+2.Next, we will calculate the Euclidean distance between the data points. The Euclidean distance is the distance between two points, which we have already studied in
+geometry.
+3.By calculating the Euclidean distance we got the nearest neighbors, as three nearest neighbors in category A and two nearest neighbors in category B.
+4.As we can see the 3 nearest neighbors are from category A, hence this new data point must belong to category A.
